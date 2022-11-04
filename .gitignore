@@ -37,3 +37,9 @@
 # .Net
 **/bin
 **/obj
+
+**/packages
+
+**/tools
+**/.vs
+**/build
