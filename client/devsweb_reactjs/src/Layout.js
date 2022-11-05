@@ -33,6 +33,12 @@ const Layout = ({ route }) => (
       <title>
         {(route.fields && route.fields.pageTitle && route.fields.pageTitle.value) || 'Page'}
       </title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,500&display=swap"
+        rel="stylesheet"
+      ></link>
     </Helmet>
 
     {/*
@@ -44,11 +50,9 @@ const Layout = ({ route }) => (
     */}
 
     {/* root placeholder for the app, which we add components to using route data */}
-    <div className="container">
-      <Placeholder name="jss-header" rendering={route} />
-      <Placeholder name="jss-main" rendering={route} />
-      <Placeholder name="jss-footer" rendering={route} />
-    </div>
+    <Placeholder name="jss-header" rendering={route} />
+    <Placeholder name="jss-main" rendering={route} />
+    <Placeholder name="jss-footer" rendering={route} />
   </React.Fragment>
 );
 

@@ -1,0 +1,27 @@
+.footer-nav {
+  flex-basis: 25%;
+
+  .header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-transform: uppercase;
+
+    /* Primary Light/4 */
+
+    color: #ffffff;
+  }
+
+  .sublinks {
+    margin-top: 10px;
+    a{
+        font-size: smaller;
+        color: #d5d5d5;
+        display: block;
+        margin-bottom: 5px;
+    }
+  }
+}

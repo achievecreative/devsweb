@@ -1,11 +1,13 @@
 import React from 'react';
 import { Placeholder, Text } from '@sitecore-jss/sitecore-jss-react';
+import './footer.scss';
+import clsx from 'clsx';
 
 const Footer = (props) => {
   return (
-    <div className="container-fluid">
+    <div className="footer">
       <div className="row">
-        <div className="col-8">
+        <div className={clsx('col-md-8', 'col-sm-12', 'footer-nav-container')}>
           <Placeholder name="jss-footer-left" rendering={props.rendering} />
         </div>
         <div className="col-4">
